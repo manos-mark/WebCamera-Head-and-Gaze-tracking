@@ -1,0 +1,31 @@
+{
+  "build": "h3e6d941_2", 
+  "build_number": 2, 
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64", 
+  "constrains": [], 
+  "depends": [
+    "vc 9.*"
+  ], 
+  "features": "", 
+  "files": [
+    "Library/bin/yaml.dll", 
+    "Library/include/yaml.h", 
+    "Library/lib/yaml.lib", 
+    "Library/lib/yaml_static.lib"
+  ], 
+  "fn": "yaml-0.1.7-h3e6d941_2.tar.bz2", 
+  "installed_by": "Miniconda2-4.6.14-Windows-x86_64.exe", 
+  "license": "MIT", 
+  "link": {
+    "source": "C:\\ProgramData\\Miniconda2\\pkgs\\yaml-0.1.7-h3e6d941_2", 
+    "type": "hard-link"
+  }, 
+  "md5": "46a367eb27f7bc241481da1edc407286", 
+  "name": "yaml", 
+  "size": 101941, 
+  "subdir": "win-64", 
+  "timestamp": 1510609869667, 
+  "track_features": "", 
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/yaml-0.1.7-h3e6d941_2.tar.bz2", 
+  "version": "0.1.7"
+}

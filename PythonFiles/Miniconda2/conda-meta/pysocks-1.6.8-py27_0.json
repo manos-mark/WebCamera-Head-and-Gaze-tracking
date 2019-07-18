@@ -1,0 +1,38 @@
+{
+  "build": "py27_0", 
+  "build_number": 0, 
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64", 
+  "constrains": [], 
+  "depends": [
+    "python >=2.7,<2.8.0a0", 
+    "win_inet_pton"
+  ], 
+  "features": "", 
+  "files": [
+    "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/PKG-INFO", 
+    "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/SOURCES.txt", 
+    "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/dependency_links.txt", 
+    "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/requires.txt", 
+    "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/top_level.txt", 
+    "Lib/site-packages/socks.py", 
+    "Lib/site-packages/socks.pyc", 
+    "Lib/site-packages/sockshandler.py", 
+    "Lib/site-packages/sockshandler.pyc"
+  ], 
+  "fn": "pysocks-1.6.8-py27_0.tar.bz2", 
+  "installed_by": "Miniconda2-4.6.14-Windows-x86_64.exe", 
+  "license": "BSD 3-Clause", 
+  "license_family": "BSD", 
+  "link": {
+    "source": "C:\\ProgramData\\Miniconda2\\pkgs\\pysocks-1.6.8-py27_0", 
+    "type": "hard-link"
+  }, 
+  "md5": "6f702ee72946052d833e733b6fe766fa", 
+  "name": "pysocks", 
+  "size": 22842, 
+  "subdir": "win-64", 
+  "timestamp": 1519749416491, 
+  "track_features": "", 
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/pysocks-1.6.8-py27_0.tar.bz2", 
+  "version": "1.6.8"
+}

@@ -1,0 +1,35 @@
+{
+  "build": "py27_0", 
+  "build_number": 0, 
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64", 
+  "constrains": [], 
+  "depends": [
+    "python >=2.7,<2.8.0a0"
+  ], 
+  "features": "", 
+  "files": [
+    "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/PKG-INFO", 
+    "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/SOURCES.txt", 
+    "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/dependency_links.txt", 
+    "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/installed-files.txt", 
+    "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/top_level.txt", 
+    "Lib/site-packages/ipaddress.py", 
+    "Lib/site-packages/ipaddress.pyc"
+  ], 
+  "fn": "ipaddress-1.0.22-py27_0.tar.bz2", 
+  "installed_by": "Miniconda2-4.6.14-Windows-x86_64.exe", 
+  "license": "PSF 2", 
+  "license_family": "PSF", 
+  "link": {
+    "source": "C:\\ProgramData\\Miniconda2\\pkgs\\ipaddress-1.0.22-py27_0", 
+    "type": "hard-link"
+  }, 
+  "md5": "c82eeed9f805b12a9d94a0f1868b9f5e", 
+  "name": "ipaddress", 
+  "size": 33782, 
+  "subdir": "win-64", 
+  "timestamp": 1523974824267, 
+  "track_features": "", 
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/ipaddress-1.0.22-py27_0.tar.bz2", 
+  "version": "1.0.22"
+}

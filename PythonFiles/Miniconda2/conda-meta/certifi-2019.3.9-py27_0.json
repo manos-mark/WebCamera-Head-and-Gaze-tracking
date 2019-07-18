@@ -1,0 +1,35 @@
+{
+  "build": "py27_0", 
+  "build_number": 0, 
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64", 
+  "constrains": [], 
+  "depends": [
+    "python >=2.7,<2.8.0a0"
+  ], 
+  "features": "", 
+  "files": [
+    "Lib/site-packages/certifi-2019.03.09-py2.7.egg-info", 
+    "Lib/site-packages/certifi/__init__.py", 
+    "Lib/site-packages/certifi/__init__.pyc", 
+    "Lib/site-packages/certifi/__main__.py", 
+    "Lib/site-packages/certifi/__main__.pyc", 
+    "Lib/site-packages/certifi/cacert.pem", 
+    "Lib/site-packages/certifi/core.py", 
+    "Lib/site-packages/certifi/core.pyc"
+  ], 
+  "fn": "certifi-2019.3.9-py27_0.tar.bz2", 
+  "installed_by": "Miniconda2-4.6.14-Windows-x86_64.exe", 
+  "license": "ISC", 
+  "link": {
+    "source": "C:\\ProgramData\\Miniconda2\\pkgs\\certifi-2019.3.9-py27_0", 
+    "type": "hard-link"
+  }, 
+  "md5": "22a56dda65b4b49452cfe7089e4ec6f9", 
+  "name": "certifi", 
+  "size": 159173, 
+  "subdir": "win-64", 
+  "timestamp": 1552319399484, 
+  "track_features": "", 
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/certifi-2019.3.9-py27_0.tar.bz2", 
+  "version": "2019.3.9"
+}

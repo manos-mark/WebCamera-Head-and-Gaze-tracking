@@ -1,0 +1,4 @@
+{
+  "c_compiler": "vs2008",
+  "openssl": "1.1.1"
+}

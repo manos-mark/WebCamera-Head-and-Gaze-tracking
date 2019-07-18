@@ -1,0 +1,22 @@
+{
+  "build": "h0c8e037_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "ca-certificates",
+    "vc 9.*"
+  ],
+  "features": "",
+  "fn": "openssl-1.1.1b-h0c8e037_1.tar.bz2",
+  "license": "OpenSSL",
+  "license_family": "Apache",
+  "md5": "50541b0ac977628964c53741939191c3",
+  "name": "openssl",
+  "size": 5013945,
+  "subdir": "win-64",
+  "timestamp": 1551974580760,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/openssl-1.1.1b-h0c8e037_1.tar.bz2",
+  "version": "1.1.1b"
+}

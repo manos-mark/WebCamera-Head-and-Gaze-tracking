@@ -1,0 +1,20 @@
+{
+  "build": "py27_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=2.7,<2.8.0a0"
+  ],
+  "features": "",
+  "fn": "certifi-2019.3.9-py27_0.tar.bz2",
+  "license": "ISC",
+  "md5": "22a56dda65b4b49452cfe7089e4ec6f9",
+  "name": "certifi",
+  "size": 159173,
+  "subdir": "win-64",
+  "timestamp": 1552319399484,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/certifi-2019.3.9-py27_0.tar.bz2",
+  "version": "2019.3.9"
+}

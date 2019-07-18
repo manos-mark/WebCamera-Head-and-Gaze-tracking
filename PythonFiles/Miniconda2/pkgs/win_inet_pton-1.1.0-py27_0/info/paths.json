@@ -1,0 +1,47 @@
+{
+  "paths": [
+    {
+      "_path": "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/PKG-INFO",
+      "path_type": "hardlink",
+      "sha256": "b2e71400c266b750142674e34db46b959a68d572766d466b99f7bc8d06226baf",
+      "size_in_bytes": 2590
+    },
+    {
+      "_path": "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/SOURCES.txt",
+      "path_type": "hardlink",
+      "sha256": "496b3b5dfa760b3bc50df708aab03ea04cfe1724dd96f5b767097a71ce570a69",
+      "size_in_bytes": 214
+    },
+    {
+      "_path": "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/dependency_links.txt",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/installed-files.txt",
+      "path_type": "hardlink",
+      "sha256": "81612a60c3c4be6ccb67a64a644dc1ddbe32aef0932eeaf51041cfb2553f54b9",
+      "size_in_bytes": 103
+    },
+    {
+      "_path": "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "58d1c102021ada107662a5239f18afa35d94f4c0769f07045b050833f8344226",
+      "size_in_bytes": 14
+    },
+    {
+      "_path": "Lib/site-packages/win_inet_pton.py",
+      "path_type": "hardlink",
+      "sha256": "097bbf572cb0df4dbf44139239175c0335770a0eee056112a175b22efab034f8",
+      "size_in_bytes": 4035
+    },
+    {
+      "_path": "Lib/site-packages/win_inet_pton.pyc",
+      "path_type": "hardlink",
+      "sha256": "2bb54f3d5827cea419e5004e65b66ffc6241d179457ba3b679747c5399ba0431",
+      "size_in_bytes": 3421
+    }
+  ],
+  "paths_version": 1
+}

@@ -1,0 +1,48 @@
+{
+  "build": "py27_0", 
+  "build_number": 0, 
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64", 
+  "constrains": [], 
+  "depends": [
+    "python >=2.7,<2.8.0a0"
+  ], 
+  "features": "", 
+  "files": [
+    "Lib/site-packages/idna-2.8-py2.7.egg-info/PKG-INFO", 
+    "Lib/site-packages/idna-2.8-py2.7.egg-info/SOURCES.txt", 
+    "Lib/site-packages/idna-2.8-py2.7.egg-info/dependency_links.txt", 
+    "Lib/site-packages/idna-2.8-py2.7.egg-info/installed-files.txt", 
+    "Lib/site-packages/idna-2.8-py2.7.egg-info/top_level.txt", 
+    "Lib/site-packages/idna/__init__.py", 
+    "Lib/site-packages/idna/__init__.pyc", 
+    "Lib/site-packages/idna/codec.py", 
+    "Lib/site-packages/idna/codec.pyc", 
+    "Lib/site-packages/idna/compat.py", 
+    "Lib/site-packages/idna/compat.pyc", 
+    "Lib/site-packages/idna/core.py", 
+    "Lib/site-packages/idna/core.pyc", 
+    "Lib/site-packages/idna/idnadata.py", 
+    "Lib/site-packages/idna/idnadata.pyc", 
+    "Lib/site-packages/idna/intranges.py", 
+    "Lib/site-packages/idna/intranges.pyc", 
+    "Lib/site-packages/idna/package_data.py", 
+    "Lib/site-packages/idna/package_data.pyc", 
+    "Lib/site-packages/idna/uts46data.py", 
+    "Lib/site-packages/idna/uts46data.pyc"
+  ], 
+  "fn": "idna-2.8-py27_0.tar.bz2", 
+  "installed_by": "Miniconda2-4.6.14-Windows-x86_64.exe", 
+  "license": "BSD Like", 
+  "link": {
+    "source": "C:\\ProgramData\\Miniconda2\\pkgs\\idna-2.8-py27_0", 
+    "type": "hard-link"
+  }, 
+  "md5": "05e810292b8b0daafd7f8285976ef68b", 
+  "name": "idna", 
+  "size": 136925, 
+  "subdir": "win-64", 
+  "timestamp": 1545083547516, 
+  "track_features": "", 
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/idna-2.8-py27_0.tar.bz2", 
+  "version": "2.8"
+}

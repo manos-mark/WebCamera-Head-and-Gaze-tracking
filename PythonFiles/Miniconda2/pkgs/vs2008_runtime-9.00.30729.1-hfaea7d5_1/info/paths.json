@@ -1,0 +1,53 @@
+{
+  "paths": [
+    {
+      "_path": "Library/bin/msvcm90.dll",
+      "path_type": "hardlink",
+      "sha256": "61a8940b5203d3e8daf5aa67fd1ffb323b0c7b4e375d766eeebdcab4b015d4be",
+      "size_in_bytes": 245760
+    },
+    {
+      "_path": "Library/bin/msvcp90.dll",
+      "path_type": "hardlink",
+      "sha256": "a70f522b931c88bbcbfafbf2fb93a66d4ca006806fde9913aedbd415eaa050c5",
+      "size_in_bytes": 853328
+    },
+    {
+      "_path": "Library/bin/msvcr90.dll",
+      "path_type": "hardlink",
+      "sha256": "3835b0c0482f635f614809f376398b1fef12993e414997ae3b8c3b2d54cc105e",
+      "size_in_bytes": 624464
+    },
+    {
+      "_path": "Library/bin/vcomp90.dll",
+      "path_type": "hardlink",
+      "sha256": "5fa03210bae43c4865f1d9a057cfddf607e0ae8a8d975c92ad66b556486259d5",
+      "size_in_bytes": 56656
+    },
+    {
+      "_path": "msvcm90.dll",
+      "path_type": "hardlink",
+      "sha256": "61a8940b5203d3e8daf5aa67fd1ffb323b0c7b4e375d766eeebdcab4b015d4be",
+      "size_in_bytes": 245760
+    },
+    {
+      "_path": "msvcp90.dll",
+      "path_type": "hardlink",
+      "sha256": "a70f522b931c88bbcbfafbf2fb93a66d4ca006806fde9913aedbd415eaa050c5",
+      "size_in_bytes": 853328
+    },
+    {
+      "_path": "msvcr90.dll",
+      "path_type": "hardlink",
+      "sha256": "3835b0c0482f635f614809f376398b1fef12993e414997ae3b8c3b2d54cc105e",
+      "size_in_bytes": 624464
+    },
+    {
+      "_path": "vcomp90.dll",
+      "path_type": "hardlink",
+      "sha256": "5fa03210bae43c4865f1d9a057cfddf607e0ae8a8d975c92ad66b556486259d5",
+      "size_in_bytes": 56656
+    }
+  ],
+  "paths_version": 1
+}

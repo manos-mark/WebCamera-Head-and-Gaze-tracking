@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "hcb6e200_0",
+  "build_number": 0,
+  "depends": [
+    "sqlite >=3.27.2,<4.0a0",
+    "vc 9.*"
+  ],
+  "license": "PSF",
+  "name": "python",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1552596459393,
+  "version": "2.7.16"
+}

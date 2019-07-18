@@ -1,0 +1,42 @@
+{
+  "build": "py27_0", 
+  "build_number": 0, 
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64", 
+  "constrains": [], 
+  "depends": [
+    "python >=2.7,<2.8.0a0"
+  ], 
+  "features": "", 
+  "files": [
+    "Lib/site-packages/concurrent/__init__.py", 
+    "Lib/site-packages/concurrent/__init__.pyc", 
+    "Lib/site-packages/concurrent/futures/__init__.py", 
+    "Lib/site-packages/concurrent/futures/__init__.pyc", 
+    "Lib/site-packages/concurrent/futures/_base.py", 
+    "Lib/site-packages/concurrent/futures/_base.pyc", 
+    "Lib/site-packages/concurrent/futures/process.py", 
+    "Lib/site-packages/concurrent/futures/process.pyc", 
+    "Lib/site-packages/concurrent/futures/thread.py", 
+    "Lib/site-packages/concurrent/futures/thread.pyc", 
+    "Lib/site-packages/futures-3.2.0-py2.7.egg-info/PKG-INFO", 
+    "Lib/site-packages/futures-3.2.0-py2.7.egg-info/SOURCES.txt", 
+    "Lib/site-packages/futures-3.2.0-py2.7.egg-info/dependency_links.txt", 
+    "Lib/site-packages/futures-3.2.0-py2.7.egg-info/not-zip-safe", 
+    "Lib/site-packages/futures-3.2.0-py2.7.egg-info/top_level.txt"
+  ], 
+  "fn": "futures-3.2.0-py27_0.tar.bz2", 
+  "installed_by": "Miniconda2-4.6.14-Windows-x86_64.exe", 
+  "license": "PSF", 
+  "link": {
+    "source": "C:\\ProgramData\\Miniconda2\\pkgs\\futures-3.2.0-py27_0", 
+    "type": "hard-link"
+  }, 
+  "md5": "5913a3b0b246ef34c7a7b7b2b519d581", 
+  "name": "futures", 
+  "size": 24965, 
+  "subdir": "win-64", 
+  "timestamp": 1531673519301, 
+  "track_features": "", 
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/futures-3.2.0-py27_0.tar.bz2", 
+  "version": "3.2.0"
+}

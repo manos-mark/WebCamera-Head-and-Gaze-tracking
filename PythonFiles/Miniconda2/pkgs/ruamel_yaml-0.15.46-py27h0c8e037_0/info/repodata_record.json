@@ -1,0 +1,23 @@
+{
+  "build": "py27h0c8e037_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=2.7,<2.8.0a0",
+    "vc 9.*",
+    "yaml >=0.1.7,<0.2.0a0"
+  ],
+  "features": "",
+  "fn": "ruamel_yaml-0.15.46-py27h0c8e037_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "c818841c8b7dd7f43f39a7aa2ca4946f",
+  "name": "ruamel_yaml",
+  "size": 265094,
+  "subdir": "win-64",
+  "timestamp": 1532969044446,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/ruamel_yaml-0.15.46-py27h0c8e037_0.tar.bz2",
+  "version": "0.15.46"
+}

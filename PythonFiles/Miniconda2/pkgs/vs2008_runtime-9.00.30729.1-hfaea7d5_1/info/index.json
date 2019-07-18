@@ -1,0 +1,11 @@
+{
+  "arch": "x86_64",
+  "build": "hfaea7d5_1",
+  "build_number": 1,
+  "depends": [],
+  "name": "vs2008_runtime",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1508370895683,
+  "version": "9.00.30729.1"
+}

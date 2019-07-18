@@ -1,0 +1,43 @@
+# This file created by conda-build 3.2.1
+# meta.yaml template originally from:
+# C:\ci\containers\00003hp9nfv\tmp\build\80754af9\rsync-recipes\asn1crypto-0.24.0-python2.7-on-winbuilder, last modified Thu Jan 11 12:27:11 2018
+# ------------------------------------------------
+
+package:
+    name: asn1crypto
+    version: 0.24.0
+source:
+    fn: asn1crypto-0.24.0.tar.gz
+    sha256: 9d5c20441baf0cb60a4ac34cc447c6c189024b6b4c6cd7877034f4965c464e49
+    url: https://pypi.io/packages/source/a/asn1crypto/asn1crypto-0.24.0.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    string: py27_0
+requirements:
+    host:
+        - certifi 2017.11.5 py27h03b45e1_0
+        - pip 9.0.1 py27hdaa76b4_4
+        - python 2.7.14 h8c3f1cb_23
+        - setuptools 36.5.0 py27ha483b79_0
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+        - wheel 0.30.0 py27ha643586_1
+        - wincertstore 0.2 py27hf04cefb_0
+    run:
+        - python >=2.7,<2.8.0a0
+test:
+    imports:
+        - asn1crypto
+about:
+    dev_url: https://github.com/wbond/asn1crypto
+    doc_url: https://github.com/wbond/asn1crypto#documentation
+    home: https://github.com/wbond/asn1crypto
+    license: MIT
+    license_file: LICENSE
+    summary: Python ASN.1 library with a focus on performance and a pythonic API
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jschueller

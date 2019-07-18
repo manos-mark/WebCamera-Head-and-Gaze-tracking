@@ -1,0 +1,23 @@
+{
+  "build": "py27_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "certifi >=2016.09",
+    "python >=2.7,<2.8.0a0",
+    "wincertstore >=0.2"
+  ],
+  "features": "",
+  "fn": "setuptools-41.0.0-py27_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "29aeedb685a389c9c9f56f5a58cb7ddc",
+  "name": "setuptools",
+  "size": 661751,
+  "subdir": "win-64",
+  "timestamp": 1555084348893,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/setuptools-41.0.0-py27_0.tar.bz2",
+  "version": "41.0.0"
+}

@@ -1,0 +1,101 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# C:\Users\jhelmus\workspace\aggregate\python-feedstock\recipe, last modified Thu Mar 14 15:41:00 2019
+# ------------------------------------------------
+
+package:
+    name: python
+    version: 2.7.16
+source:
+    -   patches:
+            - 2.7.16/0001-backport-Python-3.6-_PYTHON_SYSCONFIGDATA_NAME.patch
+            - 2.7.16/0002-Add-Anaconda-Distribution-version-logic.patch
+            - 2.7.16/0003-Darwin-Hack-sys.-exec_-prefix-if-run-from-python.app.patch
+            - 2.7.16/0004-Darwin-Add-arch-x86_64-to-UnicCCompiler-ld_args.patch
+            - 2.7.16/0005-Win32-distutils-Also-look-for-executable.bat.patch
+            - 2.7.16/0006-Win32-Change-FD_SETSIZE-from-512-to-2048.patch
+            - 2.7.16/0007-Win32-Fixes-for-Windows-GCC-interop-needed-by-RPy2-a.patch
+            - 2.7.16/0008-Do-not-pass-g-to-GCC-when-not-Py_DEBUG.patch
+            - 2.7.16/0009-Darwin-Look-in-sysroot-usr-lib-include-if-sysroot-is.patch
+            - 2.7.16/0010-runtime_library_dir_option-Use-1st-word-of-CC-as-com.patch
+            - 2.7.16/0011-Mark-sysconfigdata.py-as-utf-8.patch
+            - 2.7.16/0012-Fix-find_library-so-that-it-looks-in-sys.prefix-lib-.patch
+            - 2.7.16/0013-Fix-cross-compilation-on-Debian-based-distros.patch
+            - 2.7.16/0014-Disable-registry-lookup-unless-CONDA_PY_ALLOW_REG_PA.patch
+            - 2.7.16/0015-Unvendor-sqlite3.patch
+            - 2.7.16/0016-Add-CondaEcosystemModifyDllSearchPath.patch
+        sha256: 01da813a3600876f03f46db11cc5c408175e99f03af2ba942ef324389a83bad5
+        url: https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz
+    -   folder: externals/bzip2-1.0.6
+        sha256: c42fd1432a2667b964a74bc423bb7485059c4a6d5dc92946d59dbf9a6bdb988d
+        url: https://github.com/python/cpython-source-deps/archive/bzip2-1.0.6.zip
+    -   folder: externals/bsddb-4.7.25.0
+        sha256: 0bc1f79d2bbff8159cf56103db615cc011458b7b0f5fc4c8c3db3132f026abbc
+        url: https://github.com/python/cpython-source-deps/archive/bsddb-4.7.25.0.zip
+    -   folder: externals/openssl-1.0.2q
+        sha256: d0e7bc44ab7ea2d43837ccc648a6f94702f3bad870318c0c8c771afd9c347d16
+        url: https://github.com/python/cpython-source-deps/archive/openssl-1.0.2q.zip
+    -   folder: externals/tcl-8.5.19.0
+        sha256: 8520a7d6df448770ec129f497b0b16fdddc6876905ffce2ad13d12180598ce48
+        url: https://github.com/python/cpython-source-deps/archive/tcl-8.5.19.0.zip
+    -   folder: externals/tk-8.5.19.0
+        sha256: b5a0ab7bcd8f02b695a2877cc6c964b696727e3bd0156b033f710dc0288127d1
+        url: https://github.com/python/cpython-source-deps/archive/tk-8.5.19.0.zip
+    -   folder: externals/tix-8.4.3.5
+        sha256: f0769bdf97cc1835b4565e26664a28b3d9a11ae655075027c14ccb35a6ff8281
+        url: https://github.com/python/cpython-source-deps/archive/tix-8.4.3.5.zip
+    -   folder: externals/nasm-2.11.06
+        sha256: de3c87b26a80e789986d8e6950c6304175d3829afe9c6c7211eb7257266ab0ac
+        url: https://github.com/python/cpython-bin-deps/archive/nasm-2.11.06.zip
+build:
+    no_link:
+        - DLLs/_ctypes.pyd
+    number: '0'
+    string: hcb6e200_0
+requirements:
+    build:
+        - vs2008_win-64 9.00.30729.1 hb7fc0b5_1
+    host:
+        - sqlite 3.27.2 h0c8e037_0
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+    run:
+        - sqlite >=3.27.2,<4.0a0
+        - vc 9.*
+test:
+    commands:
+        - python -V
+        - pydoc -h
+        - idle -h
+        - python -c "import sysconfig; print sysconfig.get_config_var('CC')"
+about:
+    description: 'Python is a widely used high-level, general-purpose, interpreted,
+        dynamic
+
+        programming language. Its design philosophy emphasizes code
+
+        readability, and its syntax allows programmers to express concepts in
+
+        fewer lines of code than would be possible in languages such as C++ or
+
+        Java. The language provides constructs intended to enable clear programs
+
+        on both a small and large scale.
+
+        '
+    dev_url: https://docs.python.org/devguide/
+    doc_source_url: https://github.com/python/pythondotorg/blob/master/docs/source/index.rst
+    doc_url: https://www.python.org/doc/versions/
+    home: http://www.python.org/
+    license: PSF
+    license_file: LICENSE
+    summary: General purpose programming language
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - jjhelmus
+        - mingwandroid
+        - msarahan
+        - pelson

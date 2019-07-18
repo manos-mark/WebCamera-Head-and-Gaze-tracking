@@ -1,0 +1,17 @@
+{
+  "arch": "x86_64",
+  "build": "py27_0",
+  "build_number": 0,
+  "depends": [
+    "certifi >=2016.09",
+    "python >=2.7,<2.8.0a0",
+    "wincertstore >=0.2"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "setuptools",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1555084348893,
+  "version": "41.0.0"
+}

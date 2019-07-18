@@ -1,0 +1,20 @@
+{
+  "build": "py27hf04cefb_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=2.7,<2.8.0a0"
+  ],
+  "features": "",
+  "fn": "wincertstore-0.2-py27hf04cefb_0.tar.bz2",
+  "license": "PSF 2",
+  "md5": "f9e1c4824d9c34c53ece4f98d772eea1",
+  "name": "wincertstore",
+  "size": 13602,
+  "subdir": "win-64",
+  "timestamp": 1505849035501,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/wincertstore-0.2-py27hf04cefb_0.tar.bz2",
+  "version": "0.2"
+}

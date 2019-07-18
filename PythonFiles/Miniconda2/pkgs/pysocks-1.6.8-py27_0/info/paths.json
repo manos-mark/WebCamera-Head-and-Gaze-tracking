@@ -1,0 +1,59 @@
+{
+  "paths": [
+    {
+      "_path": "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/PKG-INFO",
+      "path_type": "hardlink",
+      "sha256": "698f27d89cf8f73abd4465466e647a3f534db3c575da76b495f6fb93a9a33432",
+      "size_in_bytes": 519
+    },
+    {
+      "_path": "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/SOURCES.txt",
+      "path_type": "hardlink",
+      "sha256": "b382e7a58ca6a4493cdb707fe3cbaf440ca09063a47a07070008021684ad63f1",
+      "size_in_bytes": 318
+    },
+    {
+      "_path": "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/dependency_links.txt",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/requires.txt",
+      "path_type": "hardlink",
+      "sha256": "54588e3c890ba46279e2cdb7a31428cd83a55c1f6b666e1ed76cfb1a5f266f0c",
+      "size_in_bytes": 14
+    },
+    {
+      "_path": "Lib/site-packages/PySocks-1.6.8-py2.7.egg-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "4ca48e21f0850682bd118f050586d8a82dcf59ddfef86d79a61f67f3e4073c39",
+      "size_in_bytes": 19
+    },
+    {
+      "_path": "Lib/site-packages/socks.py",
+      "path_type": "hardlink",
+      "sha256": "c2857917ed2fb105f1cfead085cd2fd5302ca20da9c9acf6ecbfb25bca22b15a",
+      "size_in_bytes": 32281
+    },
+    {
+      "_path": "Lib/site-packages/socks.pyc",
+      "path_type": "hardlink",
+      "sha256": "09b2ae39b7fa0739e1df852164ce302556cbf069925e43a0351f6d3796022daf",
+      "size_in_bytes": 26492
+    },
+    {
+      "_path": "Lib/site-packages/sockshandler.py",
+      "path_type": "hardlink",
+      "sha256": "10dc1450edefb7ce3fd7244702ad40d78ed32ff4c0b85bb1dadff542f355d95a",
+      "size_in_bytes": 2913
+    },
+    {
+      "_path": "Lib/site-packages/sockshandler.pyc",
+      "path_type": "hardlink",
+      "sha256": "3e2ff4a0a2a0c1f34fccbde50d0747201361219001660c125919eeec6a1bf8b7",
+      "size_in_bytes": 4345
+    }
+  ],
+  "paths_version": 1
+}

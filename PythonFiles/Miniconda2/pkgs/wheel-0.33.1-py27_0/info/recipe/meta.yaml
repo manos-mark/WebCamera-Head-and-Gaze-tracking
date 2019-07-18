@@ -1,0 +1,47 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# C:\ci\containers\000001qofc9\tmp\build\80754af9\rsync-recipes\wheel-0.33.1-python_2.7-on-winbuilder, last modified Mon Feb 25 17:13:45 2019
+# ------------------------------------------------
+
+package:
+    name: wheel
+    version: 0.33.1
+source:
+    sha256: 66a8fd76f28977bb664b098372daef2b27f60dc4d1688cfab7b37a09448f0e9d
+    url: https://pypi.io/packages/source/w/wheel/wheel-0.33.1.tar.gz
+build:
+    entry_points:
+        - wheel = wheel.cli:main
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    string: py27_0
+requirements:
+    host:
+        - certifi 2018.11.29 py27_0
+        - python 2.7.15 hcb6e200_15
+        - setuptools 40.8.0 py27_0
+        - sqlite 3.26.0 h0c8e037_0
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+        - wincertstore 0.2 py27hf04cefb_0
+    run:
+        - python >=2.7,<2.8.0a0
+        - setuptools
+test:
+    commands:
+        - wheel --help
+    imports:
+        - wheel
+about:
+    home: https://github.com/pypa/wheel
+    license: MIT
+    license_file: LICENSE.txt
+    summary: A built-package format for Python.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - mingwandroid
+        - ocefpaf
+        - pelson

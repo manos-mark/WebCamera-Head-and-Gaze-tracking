@@ -1,0 +1,49 @@
+# This file created by conda-build 3.10.9
+# meta.yaml template originally from:
+# C:\Users\builder\conda\aggregate\futures-feedstock\recipe, last modified Tue Jul  3 15:47:42 2018
+# ------------------------------------------------
+
+package:
+    name: futures
+    version: 3.2.0
+source:
+    fn: futures-3.2.0.tar.gz
+    sha256: 9ec02aa7d674acb8618afb127e27fde7fc68994c0437ad759fa094a574adb265
+    url: https://pypi.io/packages/source/f/futures/futures-3.2.0.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    string: py27_0
+requirements:
+    host:
+        - certifi 2018.4.16 py27_0
+        - python 2.7.15 he216670_0
+        - setuptools 39.2.0 py27_0
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+        - wincertstore 0.2 py27hf04cefb_0
+    run:
+        - python >=2.7,<2.8.0a0
+test:
+    imports:
+        - concurrent
+        - concurrent.futures
+about:
+    description: 'concurrent.futures module provides a high-level interface for
+
+        asynchronously executing callables.
+
+        '
+    dev_url: https://github.com/agronholm/pythonfutures
+    doc_source_url: https://github.com/agronholm/pythonfutures/blob/master/docs/index.rst
+    doc_url: http://pythonhosted.org/futures/
+    home: https://github.com/agronholm/pythonfutures
+    license: PSF
+    license_file: LICENSE
+    summary: Backport of the concurrent.futures package from Python 3.2
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - nehaljwani

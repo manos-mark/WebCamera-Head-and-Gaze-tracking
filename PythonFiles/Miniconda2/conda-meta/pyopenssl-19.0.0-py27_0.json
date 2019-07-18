@@ -1,0 +1,52 @@
+{
+  "build": "py27_0", 
+  "build_number": 0, 
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64", 
+  "constrains": [], 
+  "depends": [
+    "cryptography >=2.2.1", 
+    "python >=2.7,<2.8.0a0", 
+    "six >=1.5.2"
+  ], 
+  "features": "", 
+  "files": [
+    "Lib/site-packages/OpenSSL/SSL.py", 
+    "Lib/site-packages/OpenSSL/SSL.pyc", 
+    "Lib/site-packages/OpenSSL/__init__.py", 
+    "Lib/site-packages/OpenSSL/__init__.pyc", 
+    "Lib/site-packages/OpenSSL/_util.py", 
+    "Lib/site-packages/OpenSSL/_util.pyc", 
+    "Lib/site-packages/OpenSSL/crypto.py", 
+    "Lib/site-packages/OpenSSL/crypto.pyc", 
+    "Lib/site-packages/OpenSSL/debug.py", 
+    "Lib/site-packages/OpenSSL/debug.pyc", 
+    "Lib/site-packages/OpenSSL/rand.py", 
+    "Lib/site-packages/OpenSSL/rand.pyc", 
+    "Lib/site-packages/OpenSSL/tsafe.py", 
+    "Lib/site-packages/OpenSSL/tsafe.pyc", 
+    "Lib/site-packages/OpenSSL/version.py", 
+    "Lib/site-packages/OpenSSL/version.pyc", 
+    "Lib/site-packages/pyOpenSSL-19.0.0-py2.7.egg-info/PKG-INFO", 
+    "Lib/site-packages/pyOpenSSL-19.0.0-py2.7.egg-info/SOURCES.txt", 
+    "Lib/site-packages/pyOpenSSL-19.0.0-py2.7.egg-info/dependency_links.txt", 
+    "Lib/site-packages/pyOpenSSL-19.0.0-py2.7.egg-info/installed-files.txt", 
+    "Lib/site-packages/pyOpenSSL-19.0.0-py2.7.egg-info/requires.txt", 
+    "Lib/site-packages/pyOpenSSL-19.0.0-py2.7.egg-info/top_level.txt"
+  ], 
+  "fn": "pyopenssl-19.0.0-py27_0.tar.bz2", 
+  "installed_by": "Miniconda2-4.6.14-Windows-x86_64.exe", 
+  "license": "Apache 2.0", 
+  "license_family": "Apache", 
+  "link": {
+    "source": "C:\\ProgramData\\Miniconda2\\pkgs\\pyopenssl-19.0.0-py27_0", 
+    "type": "hard-link"
+  }, 
+  "md5": "b846137d1aa39ec7ec1b9f336818356b", 
+  "name": "pyopenssl", 
+  "size": 81872, 
+  "subdir": "win-64", 
+  "timestamp": 1549320810876, 
+  "track_features": "", 
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/pyopenssl-19.0.0-py27_0.tar.bz2", 
+  "version": "19.0.0"
+}

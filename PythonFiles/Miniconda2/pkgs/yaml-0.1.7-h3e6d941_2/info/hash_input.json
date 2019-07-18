@@ -1,0 +1,28 @@
+{
+  "requirements": {
+    "build": [
+      "cmake 3.9.4 h4b83b1b_0",
+      "vc 9 h7299396_1",
+      "vs2008_runtime 9.00.30729.1 hfaea7d5_1",
+      "vs2008_win-64 9.00.30729.1 hb7fc0b5_1"
+    ],
+    "run": [
+      "vc 9.*"
+    ]
+  },
+  "build": {
+    "run_exports": [
+      "yaml >=0.1.7,<0.2.0a0"
+    ]
+  },
+  "source": {
+    "url": "http://pyyaml.org/download/libyaml/yaml-0.1.7.tar.gz",
+    "sha256": "8088e457264a98ba451a90b8661fcb4f9d6f478f7265d48322a196cec2480729",
+    "patches": [
+      "CMakeLists.txt.patch"
+    ]
+  },
+  "extra": {
+    "copy_test_source_files": true
+  }
+}

@@ -1,0 +1,27 @@
+{"_url": "https://repo.anaconda.com/pkgs/r/noarch/", "_etag": "\"1df6af89928421a21b445cafe0e209b1\"", "_mod": "Wed, 17 Apr 2019 22:07:24 GMT", "_cache_control": "public, max-age=30", 
+  "info": {
+    "arch": null,
+    "platform": null,
+    "subdir": "noarch"
+  },
+  "packages": {
+    "r-mrclient-mlm-3.4.3-mro343_0.tar.bz2": {
+      "build": "mro343_0",
+      "build_number": 0,
+      "depends": [
+        "mro-base 3.4.3.*",
+        "r-mrclient-mml >=3.4.3,<3.4.4.0a0"
+      ],
+      "license": "Proprietary",
+      "license_family": "Proprietary",
+      "md5": "8d4a9c114c9741e2990d39b83834ec90",
+      "name": "r-mrclient-mlm",
+      "noarch": "generic",
+      "sha256": "3e65ed512d577ce4153a112dd77b2f26b2e110c4d9c0767fa5296d92a606f579",
+      "size": 539643200,
+      "subdir": "noarch",
+      "timestamp": 1519727474730,
+      "version": "3.4.3"
+    }
+  }
+}

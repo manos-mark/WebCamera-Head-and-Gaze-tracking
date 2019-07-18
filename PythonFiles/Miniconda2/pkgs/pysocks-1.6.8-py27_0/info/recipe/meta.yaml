@@ -1,0 +1,44 @@
+# This file created by conda-build 3.5.1
+# meta.yaml template originally from:
+# C:\ci\containers\00000bhtp8v\tmp\build\80754af9\rsync-recipes\pysocks-1.6.8-python2.7-on-winbuilder, last modified Tue Feb 27 10:34:57 2018
+# ------------------------------------------------
+
+package:
+    name: pysocks
+    version: 1.6.8
+source:
+    fn: PySocks-1.6.8.tar.gz
+    sha256: 3fe52c55890a248676fd69dc9e3c4e811718b777834bcaab7a8125cf9deac672
+    url: https://pypi.io/packages/source/P/PySocks/PySocks-1.6.8.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    string: py27_0
+requirements:
+    host:
+        - certifi 2018.1.18 py27_0
+        - python 2.7.14 h8c3f1cb_23
+        - setuptools 38.5.1 py27_0
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+        - wincertstore 0.2 py27hf04cefb_0
+    run:
+        - python >=2.7,<2.8.0a0
+        - win_inet_pton
+test:
+    imports:
+        - socks
+about:
+    dev_url: https://github.com/Anorov/PySocks
+    doc_url: https://github.com/Anorov/PySocks/blob/master/README.md
+    home: https://github.com/Anorov/PySocks
+    license: BSD 3-Clause
+    license_family: BSD
+    license_file: LICENSE
+    summary: A Python SOCKS client module. See https://github.com/Anorov/PySocks for
+        more information.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - pmlandwehr

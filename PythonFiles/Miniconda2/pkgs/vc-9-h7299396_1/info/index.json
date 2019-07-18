@@ -1,0 +1,16 @@
+{
+  "arch": "x86_64",
+  "build": "h7299396_1",
+  "build_number": 1,
+  "depends": [
+    "vs2008_runtime >=9.0.30729.1,<10.0a0"
+  ],
+  "license": "Modified BSD License (3-clause)",
+  "license_family": "BSD",
+  "name": "vc",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1508370898881,
+  "track_features": "vc9",
+  "version": "9"
+}

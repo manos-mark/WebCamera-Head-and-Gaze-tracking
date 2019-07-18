@@ -1,0 +1,47 @@
+{
+  "paths": [
+    {
+      "_path": "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/PKG-INFO",
+      "path_type": "hardlink",
+      "sha256": "4315936b408db588387e7959edb0250de53012022c9e02c782e49355b2ec55d6",
+      "size_in_bytes": 955
+    },
+    {
+      "_path": "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/SOURCES.txt",
+      "path_type": "hardlink",
+      "sha256": "b4a5162a0b2858983789fae81298eb1e934abecbc0550fe009c8f2c57da3c7f9",
+      "size_in_bytes": 227
+    },
+    {
+      "_path": "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/dependency_links.txt",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/installed-files.txt",
+      "path_type": "hardlink",
+      "sha256": "04aa28cc3028a4bab3cba1215be138dd61eda9ca6c4c64381599523d66aa537d",
+      "size_in_bytes": 95
+    },
+    {
+      "_path": "Lib/site-packages/ipaddress-1.0.22-py2.7.egg-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "d9e355e64a150c2b81ee11b5ed87e1fa590bea24274a99d072bf5c9ac131d835",
+      "size_in_bytes": 10
+    },
+    {
+      "_path": "Lib/site-packages/ipaddress.py",
+      "path_type": "hardlink",
+      "sha256": "d8e81b91e003dab2e4717a9b72fa1fdc9e51ee54708cd2e80724b24e406d2a77",
+      "size_in_bytes": 79852
+    },
+    {
+      "_path": "Lib/site-packages/ipaddress.pyc",
+      "path_type": "hardlink",
+      "sha256": "19a986f22a441ab9dfc9f332de05a23aa7e749db6ac29197eda2904b900fabba",
+      "size_in_bytes": 73435
+    }
+  ],
+  "paths_version": 1
+}

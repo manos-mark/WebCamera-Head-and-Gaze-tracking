@@ -1,0 +1,20 @@
+{
+  "build": "h0c8e037_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "vc 9.*"
+  ],
+  "features": "",
+  "fn": "sqlite-3.27.2-h0c8e037_0.tar.bz2",
+  "license": "Public-Domain (http://www.sqlite.org/copyright.html)",
+  "md5": "e16f51f5c3e9a4de43e85c61c03b69b5",
+  "name": "sqlite",
+  "size": 909580,
+  "subdir": "win-64",
+  "timestamp": 1552417581537,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/sqlite-3.27.2-h0c8e037_0.tar.bz2",
+  "version": "3.27.2"
+}

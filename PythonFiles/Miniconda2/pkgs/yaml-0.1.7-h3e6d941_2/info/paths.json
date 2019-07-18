@@ -1,0 +1,29 @@
+{
+  "paths": [
+    {
+      "_path": "Library/bin/yaml.dll",
+      "path_type": "hardlink",
+      "sha256": "9ce4c1138ba95dfd0daee102d45da92764444967c53f538648c0d3a15a320b2c",
+      "size_in_bytes": 111104
+    },
+    {
+      "_path": "Library/include/yaml.h",
+      "path_type": "hardlink",
+      "sha256": "5a16306d95841c740f30b118cf528289f2745390008b992d72caa9a0f08b0fe9",
+      "size_in_bytes": 54225
+    },
+    {
+      "_path": "Library/lib/yaml.lib",
+      "path_type": "hardlink",
+      "sha256": "fcc498819339afcad00acc5393d22145ff0cbe52967fa1944a0ecd3cdd5e34e0",
+      "size_in_bytes": 15316
+    },
+    {
+      "_path": "Library/lib/yaml_static.lib",
+      "path_type": "hardlink",
+      "sha256": "a163138daf33fb61def3b0642bdcfe117904b4841af37961fd3b601541250fd4",
+      "size_in_bytes": 258252
+    }
+  ],
+  "paths_version": 1
+}

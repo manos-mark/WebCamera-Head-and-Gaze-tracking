@@ -1,0 +1,1 @@
+{"requirements": {"run": ["vs2008_runtime >=9.0.30729.1,<10.0a0"]}, "build": {"track_features": ["vc9"]}, "extra": {"copy_test_source_files": true}}

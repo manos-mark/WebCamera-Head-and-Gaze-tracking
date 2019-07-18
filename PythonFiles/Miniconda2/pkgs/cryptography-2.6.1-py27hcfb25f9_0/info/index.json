@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "py27hcfb25f9_0",
+  "build_number": 0,
+  "depends": [
+    "asn1crypto >=0.21.0",
+    "cffi >=1.7",
+    "enum34",
+    "idna >=2.1",
+    "ipaddress",
+    "openssl >=1.1.1b,<1.1.2a",
+    "python >=2.7,<2.8.0a0",
+    "six >=1.4.1",
+    "vc 9.*"
+  ],
+  "license": "Apache 2.0 or BSD 3-Clause, PSF 2",
+  "license_family": "BSD",
+  "name": "cryptography",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1552320009516,
+  "version": "2.6.1"
+}

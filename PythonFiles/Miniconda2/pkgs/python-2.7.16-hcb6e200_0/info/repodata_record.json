@@ -1,0 +1,21 @@
+{
+  "build": "hcb6e200_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "sqlite >=3.27.2,<4.0a0",
+    "vc 9.*"
+  ],
+  "features": "",
+  "fn": "python-2.7.16-hcb6e200_0.tar.bz2",
+  "license": "PSF",
+  "md5": "3b019e009384b1c729a7254c6b9f21e3",
+  "name": "python",
+  "size": 20365883,
+  "subdir": "win-64",
+  "timestamp": 1552596459393,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/python-2.7.16-hcb6e200_0.tar.bz2",
+  "version": "2.7.16"
+}

@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "py27h0c8e037_1",
+  "build_number": 1,
+  "depends": [
+    "python >=2.7,<2.8.0a0",
+    "vc 9.*"
+  ],
+  "license": "PSF",
+  "name": "pywin32",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1525826153650,
+  "version": "223"
+}

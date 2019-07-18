@@ -1,0 +1,56 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# C:\ci\containers\00000pdpaqd\tmp\build\80754af9\rsync-recipes\sqlite-3.27.2-c_compiler_vs2008-on-winbuilder, last modified Mon Mar 11 17:10:32 2019
+# ------------------------------------------------
+
+package:
+    name: sqlite
+    version: 3.27.2
+source:
+    patches:
+        - 0001-expose-symbols.patch
+    sha1: 5f5750e3f39b7b60394a2fb6ddb2371f848670e6
+    url: https://www.sqlite.org/2019/sqlite-autoconf-3270200.tar.gz
+build:
+    number: '0'
+    run_exports:
+        - sqlite >=3.27.2,<4.0a0
+    string: h0c8e037_0
+requirements:
+    build:
+        - vs2008_win-64 9.00.30729.1 hb7fc0b5_1
+    host:
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+    run:
+        - vc 9.*
+test:
+    commands:
+        - sqlite3 --version
+        - IF NOT EXIST %LIBRARY_BIN%\sqlite3.dll exit 1
+        - IF NOT EXIST %LIBRARY_LIB%\sqlite3.lib exit 1
+        - IF NOT EXIST %LIBRARY_INC%\sqlite3.h exit 1
+about:
+    description: 'SQLite is a self-contained, high-reliability, embedded, full-featured,
+
+        public-domain, SQL database engine.It is the most used database engine
+
+        in the world.
+
+        '
+    dev_url: https://github.com/mackyle/sqlite
+    doc_source_url: https://github.com/mackyle/sqlite/tree/master/doc
+    doc_url: http://www.sqlite.org/docs.html
+    home: http://www.sqlite.org/
+    license: Public-Domain (http://www.sqlite.org/copyright.html)
+    license_url: http://www.sqlite.org/copyright.html
+    summary: Implements a self-contained, zero-configuration, SQL database engine.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - jjhelmus
+        - mingwandroid
+        - msarahan
+        - ocefpaf

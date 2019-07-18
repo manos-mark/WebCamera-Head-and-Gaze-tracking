@@ -1,0 +1,34 @@
+{
+  "build": "py27_0", 
+  "build_number": 0, 
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64", 
+  "constrains": [], 
+  "depends": [
+    "python >=2.7,<2.8.0a0"
+  ], 
+  "features": "", 
+  "files": [
+    "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/PKG-INFO", 
+    "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/SOURCES.txt", 
+    "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/dependency_links.txt", 
+    "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/installed-files.txt", 
+    "Lib/site-packages/win_inet_pton-1.1.0-py2.7.egg-info/top_level.txt", 
+    "Lib/site-packages/win_inet_pton.py", 
+    "Lib/site-packages/win_inet_pton.pyc"
+  ], 
+  "fn": "win_inet_pton-1.1.0-py27_0.tar.bz2", 
+  "installed_by": "Miniconda2-4.6.14-Windows-x86_64.exe", 
+  "license": "PUBLIC-DOMAIN", 
+  "link": {
+    "source": "C:\\ProgramData\\Miniconda2\\pkgs\\win_inet_pton-1.1.0-py27_0", 
+    "type": "hard-link"
+  }, 
+  "md5": "0c5b6d9224e84b8c56859f1d7888d095", 
+  "name": "win_inet_pton", 
+  "size": 9212, 
+  "subdir": "win-64", 
+  "timestamp": 1551195770036, 
+  "track_features": "", 
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/win_inet_pton-1.1.0-py27_0.tar.bz2", 
+  "version": "1.1.0"
+}

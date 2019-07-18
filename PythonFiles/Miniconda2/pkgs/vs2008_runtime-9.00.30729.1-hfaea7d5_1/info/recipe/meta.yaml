@@ -1,0 +1,17 @@
+# This file created by conda-build 3.0.27
+# ------------------------------------------------
+
+package:
+    name: vs2008_runtime
+    version: 9.00.30729.1
+build:
+    noarch: false
+    number: '1'
+    string: hfaea7d5_1
+extra:
+    copy_test_source_files: true
+    final: true
+    parent_recipe:
+        name: vs2008
+        path: C:\ci\containers\000036g4uec\tmp\build\80754af9\rsync-recipes\vs2008-9.00.30729.1-on-winbuilder
+        version: 9.00.30729.1

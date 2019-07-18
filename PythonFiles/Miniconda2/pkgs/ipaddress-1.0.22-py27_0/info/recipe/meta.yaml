@@ -1,0 +1,47 @@
+# This file created by conda-build 3.8.1
+# meta.yaml template originally from:
+# C:\ci\containers\00003u648fj\tmp\build\80754af9\rsync-recipes\ipaddress-1.0.22-python_2.7-on-winbuilder, last modified Tue Apr 17 09:14:53 2018
+# ------------------------------------------------
+
+package:
+    name: ipaddress
+    version: 1.0.22
+source:
+    sha256: b146c751ea45cad6188dd6cf2d9b757f6f4f8d6ffb96a023e6f2e26eea02a72c
+    url: https://pypi.io/packages/source/i/ipaddress/ipaddress-1.0.22.tar.gz
+build:
+    number: '0'
+    script: python -m pip install --no-deps --ignore-installed .
+    string: py27_0
+requirements:
+    host:
+        - certifi 2018.1.18 py27_0
+        - pip 9.0.3 py27_0
+        - python 2.7.14 h4a10d90_31
+        - setuptools 39.0.1 py27_0
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+        - wheel 0.31.0 py27_0
+        - wincertstore 0.2 py27hf04cefb_0
+    run:
+        - python >=2.7,<2.8.0a0
+test:
+    imports:
+        - ipaddress
+about:
+    description: 'Python 3.3''s ipadress for older Python versions
+
+        '
+    doc_source_url: https://github.com/phihag/ipaddress/blob/master/README.md
+    doc_url: https://pypi.python.org/pypi/ipaddress
+    home: https://github.com/phihag/ipaddress
+    license: PSF 2
+    license_family: PSF
+    license_file: LICENSE
+    summary: IPv4/IPv6 manipulation library
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - ocefpaf

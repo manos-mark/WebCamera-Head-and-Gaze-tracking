@@ -1,0 +1,63 @@
+# This file created by conda-build 3.10.9
+# meta.yaml template originally from:
+# C:\Users\builder\conda\aggregate\chardet-feedstock\recipe, last modified Tue Jul  3 15:46:05 2018
+# ------------------------------------------------
+
+package:
+    name: chardet
+    version: 3.0.4
+source:
+    fn: chardet-3.0.4.tar.gz
+    sha256: 84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae
+    url: https://pypi.io/packages/source/c/chardet/chardet-3.0.4.tar.gz
+build:
+    entry_points:
+        - chardetect = chardet.cli.chardetect:main
+    number: '1'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    string: py27_1
+requirements:
+    host:
+        - atomicwrites 1.1.5 py27_0
+        - attrs 18.1.0 py27_0
+        - certifi 2018.4.16 py27_0
+        - colorama 0.3.9 py27hdfe4ae1_0
+        - funcsigs 1.0.2 py27h8885ae1_0
+        - more-itertools 4.2.0 py27_0
+        - pluggy 0.6.0 py27_0
+        - py 1.5.3 py27_0
+        - pytest 3.6.2 py27_0
+        - pytest-runner 4.2 py27_0
+        - python 2.7.15 he216670_0
+        - setuptools 39.2.0 py27_0
+        - six 1.11.0 py27_1
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+        - wincertstore 0.2 py27hf04cefb_0
+    run:
+        - python >=2.7,<2.8.0a0
+test:
+    commands:
+        - chardetect --help
+    imports:
+        - chardet
+about:
+    description: 'chardet is a character encoding auto-detector in Python.
+
+        '
+    dev_url: https://github.com/chardet/chardet
+    doc_source_url: https://github.com/chardet/chardet/blob/master/docs/index.rst
+    doc_url: http://chardet.readthedocs.org/
+    home: https://github.com/chardet/chardet
+    license: LGPL2
+    license_family: GPL
+    license_file: LICENSE
+    summary: Universal character encoding detector
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - dan-blanchard
+        - jschueller
+        - nehaljwani
+        - sigmavirus24

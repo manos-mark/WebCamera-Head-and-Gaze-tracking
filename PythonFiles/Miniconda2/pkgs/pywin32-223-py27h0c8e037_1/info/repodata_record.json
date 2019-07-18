@@ -1,0 +1,21 @@
+{
+  "build": "py27h0c8e037_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=2.7,<2.8.0a0",
+    "vc 9.*"
+  ],
+  "features": "",
+  "fn": "pywin32-223-py27h0c8e037_1.tar.bz2",
+  "license": "PSF",
+  "md5": "d7cc278e03a80514e91a65846312058d",
+  "name": "pywin32",
+  "size": 13245367,
+  "subdir": "win-64",
+  "timestamp": 1525826153650,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/pywin32-223-py27h0c8e037_1.tar.bz2",
+  "version": "223"
+}

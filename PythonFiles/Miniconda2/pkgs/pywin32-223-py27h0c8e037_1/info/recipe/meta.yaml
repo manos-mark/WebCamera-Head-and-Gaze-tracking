@@ -1,0 +1,49 @@
+# This file created by conda-build 3.10.2
+# meta.yaml template originally from:
+# C:\ci\containers\0000330ngk7\tmp\build\80754af9\rsync-recipes\pywin32-223-python_2.7-c_compiler_vs2008-on-winbuilder, last modified Tue May  8 19:20:55 2018
+# ------------------------------------------------
+
+package:
+    name: pywin32
+    version: '223'
+source:
+    fn: pywin32-223.zip
+    patches:
+        - 0001-scintilla_makefiles.patch
+        - ignore_exchange_plugin.patch
+        - nuke_post_install.patch
+        - remove-horrible-PATH-hack-from-pth-file.patch
+    sha256: 8e5b79d8875ceffe82bcde88321c7ffad4a9917defd80d6f1a532b3bae0fed83
+    url: https://github.com/mhammond/pywin32/archive/b223.zip
+build:
+    number: '1'
+    string: py27h0c8e037_1
+requirements:
+    build:
+        - vs2008_win-64 9.00.30729.1 hb7fc0b5_1
+    host:
+        - certifi 2018.4.16 py27_0
+        - python 2.7.15 he216670_0
+        - setuptools 39.1.0 py27_0
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+        - wincertstore 0.2 py27hf04cefb_0
+    run:
+        - python >=2.7,<2.8.0a0
+        - vc 9.*
+about:
+    description: 'A set of extension modules that provides access to many of the Windows
+        API functions.
+
+        '
+    doc_source_url: https://sourceforge.net/projects/pywin32/
+    doc_url: https://pypi.python.org/pypi/pywin32
+    home: https://sourceforge.net/projects/pywin32
+    license: PSF
+    summary: Python extensions for Windows
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - mingwandroid
+        - nicoddemus

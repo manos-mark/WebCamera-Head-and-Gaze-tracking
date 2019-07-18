@@ -1,0 +1,60 @@
+# This file created by conda-build 3.10.9
+# meta.yaml template originally from:
+# C:\Users\builder\conda\aggregate\pycosat-feedstock\recipe, last modified Tue Jul  3 15:52:47 2018
+# ------------------------------------------------
+
+package:
+    name: pycosat
+    version: 0.6.3
+source:
+    git_rev: 0.6.3
+    git_url: https://github.com/mingwandroid/pycosat.git
+build:
+    number: '0'
+    string: py27h0c8e037_0
+requirements:
+    build:
+        - vs2008_win-64 9.00.30729.1 hb7fc0b5_1
+    host:
+        - msinttypes r26 h7e1a5f4_2
+        - python 2.7.15 he216670_0
+        - vc 9 h7299396_1
+        - vs2008_runtime 9.00.30729.1 hfaea7d5_1
+    run:
+        - python >=2.7,<2.8.0a0
+        - vc 9.*
+test:
+    files:
+        - qg3-08.cnf
+        - sudoku.py
+        - uf20-098.cnf
+    imports:
+        - pycosat
+about:
+    description: 'PicoSAT is a popular SAT solver written by Armin Biere in pure C.
+        This
+
+        package provides efficient Python bindings to picosat on the C level, i.e.
+
+        when importing pycosat, the picosat solver becomes part of the Python
+
+        process itself.
+
+        '
+    dev_url: https://github.com/ContinuumIO/pycosat
+    doc_source_url: https://github.com/ContinuumIO/pycosat/blob/master/README.rst
+    doc_url: https://pypi.python.org/pypi/pycosat
+    home: https://github.com/ContinuumIO/pycosat
+    license: MIT
+    summary: Bindings to picosat (a SAT solver)
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - kalefranz
+        - mcg1969
+        - mingwandroid
+        - msarahan
+        - nehaljwani
+        - pelson
