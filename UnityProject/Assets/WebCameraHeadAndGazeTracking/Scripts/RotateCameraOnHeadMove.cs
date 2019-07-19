@@ -70,7 +70,7 @@ public class RotateCameraOnHeadMove : MonoBehaviour
     private void rotateCamera(float yRotation, float rotationSpeed)
     {
         UnityEngine.Quaternion targetRotation = new UnityEngine.Quaternion(0, yRotation, 0, 0);
-        this.camera.transform.rotation =  Quaternion.Slerp(this.camera.transform.rotation, targetRotation, rotationSpeed *  Time.deltaTime);
+        this.camera.transform.rotation =  Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed *  Time.deltaTime);
     }
 
     private void OnDestroy()
