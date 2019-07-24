@@ -8,8 +8,10 @@ public class RotateCameraOnHeadMove : MonoBehaviour
     public Transform Target;
 
     public int MIN_DETECTED_ROTATION = 8;
-    public float ROTATION_SPEED = 1.5f;
-    public float Y_ROTATION_DISTANCE = 1.5f;
+    public float ROTATION_SPEED = 10f;
+    public float ROTATION_DISTANCE = 0.3f;
+
+    public float MAX_ROTATION = 0.4f;
 
     private float previousYRotation = 0;
     private float currentYRotation = 0;
@@ -24,20 +26,23 @@ public class RotateCameraOnHeadMove : MonoBehaviour
 
     private void Update()
     {
-        receiveAndParseMessage();
+        string message = _scriptConnector.ReceiveMessage();
+        parseMessage(message);
 
-        if (receivedYRotation != 0)
+        if (message != null)
         {
             currentNullRotationCount = 0;
 
             if (receivedYRotation >= previousYRotation + MIN_DETECTED_ROTATION) // rotate right
             {
-                currentYRotation = currentYRotation + Y_ROTATION_DISTANCE;
+                if (this.transform.localRotation.y > MAX_ROTATION) return;
+                currentYRotation = currentYRotation + ROTATION_DISTANCE;
                 rotateCamera(currentYRotation);
             } 
             else if (receivedYRotation < previousYRotation - MIN_DETECTED_ROTATION) // rotate left
             {
-                currentYRotation = currentYRotation - Y_ROTATION_DISTANCE;
+                if (this.transform.localRotation.y < -MAX_ROTATION) return;
+                currentYRotation = currentYRotation - ROTATION_DISTANCE;
                 rotateCamera(currentYRotation);
             }
         } 
@@ -47,12 +52,15 @@ public class RotateCameraOnHeadMove : MonoBehaviour
             {
                 if (currentYRotation != 0)
                 {
-                    if (currentYRotation > 1) {
+                    if (currentYRotation > 1) 
+                    {
+                        if (this.transform.localRotation.y > MAX_ROTATION) return;
                         currentYRotation -= 1;
-                    rotateCamera(currentYRotation);
+                        rotateCamera(currentYRotation);
                     } 
                     else if (currentYRotation < -1)
                     {
+                        if (this.transform.localRotation.y < -MAX_ROTATION) return;
                         currentYRotation +=1;
                         rotateCamera(currentYRotation);
                     }
@@ -70,14 +78,13 @@ public class RotateCameraOnHeadMove : MonoBehaviour
     private void rotateCamera(float yRotation)
     {
         this.transform.localRotation = Quaternion.Euler(0, yRotation * ROTATION_SPEED, 0);
+        Debug.Log(this.transform.localRotation.y);
         previousYRotation = currentYRotation;
         receivedYRotation = 0;
     }
 
-    private void receiveAndParseMessage()
+    private void parseMessage(string message)
     {
-        string message = _scriptConnector.ReceiveMessage();
-
         if (message != null)
         {
             try 
