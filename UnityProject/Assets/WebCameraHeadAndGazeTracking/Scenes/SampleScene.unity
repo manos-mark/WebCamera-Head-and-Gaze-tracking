@@ -497,3 +497,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 963067249}
+  MIN_DETECTED_ROTATION: 8
+  ROTATION_SPEED: 2
+  ROTATION_DISTANCE: 1.5

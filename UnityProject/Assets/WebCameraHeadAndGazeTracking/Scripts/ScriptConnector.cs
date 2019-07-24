@@ -12,6 +12,7 @@ public class ScriptConnector
         UnityEngine.Debug.Log("Connecting unity with python script...");
         socket.Connect("tcp://localhost:5555");
         socket.Subscribe("");
+        UnityEngine.Debug.Log("Connected");
         
     }
     public string ReceiveMessage() 
@@ -28,8 +29,9 @@ public class ScriptConnector
 
     public void Destroy() 
     {
-        UnityEngine.Debug.Log("Disconecting...");
+        UnityEngine.Debug.Log("Disconnecting...");
         socket.Close();
         NetMQConfig.Cleanup();
+        UnityEngine.Debug.Log("Disconnected");
     }
 }
