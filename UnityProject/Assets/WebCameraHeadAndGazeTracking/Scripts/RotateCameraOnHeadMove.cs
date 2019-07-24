@@ -3,14 +3,16 @@ using NetMQ;
 using System.Globalization;
 public class RotateCameraOnHeadMove : MonoBehaviour
 {
+    public Transform Target;
     private FaceDetector _faceDetector;
     private ScriptConnector _scriptConnector;
-    public Transform Target;
 
-    public int MIN_DETECTED_ROTATION = 8;
-    public float ROTATION_SPEED = 1.5f;
-    public float Y_ROTATION_DISTANCE = 1.5f;
-    public float X_ROTATION_DISTANCE = 1.5f;
+    public int MIN_Y_DETECTED_ROTATION = 8;
+    public int MIN_X_DETECTED_ROTATION = 4;
+
+    public float ROTATION_SPEED = 4f;
+    public float Y_ROTATION_DISTANCE = 1f;
+    public float X_ROTATION_DISTANCE = 0.2f;
 
     private float previousXRotation = 0;
     private float previousYRotation = 0;
@@ -18,7 +20,7 @@ public class RotateCameraOnHeadMove : MonoBehaviour
     private float currentYRotation = 0;
     private float receivedXRotation = 0;
     private float receivedYRotation = 0;
-    private int currentNullRotationCount = 0;
+    private int noRotationReceivedCount = 0;
     
     private void Awake()
     {
@@ -28,51 +30,47 @@ public class RotateCameraOnHeadMove : MonoBehaviour
 
     private void Update()
     {
-        receiveAndParseMessage();
+        string message = _scriptConnector.ReceiveMessage();
+        parseMessage(message);
 
-        Debug.Log("X: "+receivedXRotation+"   "+"Y: "+receivedYRotation);
-        if (receivedYRotation != 0 && receivedXRotation != 0)
+        // Debug.Log("X: "+receivedXRotation+"   "+"Y: "+receivedYRotation);
+        if (message != null)
         {
-            currentNullRotationCount = 0;
-
-            if (receivedYRotation > -MIN_DETECTED_ROTATION && receivedYRotation < MIN_DETECTED_ROTATION)
+            noRotationReceivedCount = 0;
+            if (receivedXRotation >= previousXRotation + MIN_X_DETECTED_ROTATION) // rotate down
             {
-                if (receivedXRotation >= previousXRotation + MIN_DETECTED_ROTATION) // rotate up
-                {
-                    currentXRotation = currentXRotation + X_ROTATION_DISTANCE;
-                    rotateCamera(currentXRotation, currentYRotation);
-                } else if (receivedXRotation < previousXRotation - MIN_DETECTED_ROTATION) {
-                    currentXRotation = currentXRotation - X_ROTATION_DISTANCE; // rotate down
-                    rotateCamera(currentXRotation, currentYRotation);
-                }  
-            } 
-            else if (receivedYRotation >= previousYRotation + MIN_DETECTED_ROTATION) // rotate right
+                currentXRotation = currentXRotation + X_ROTATION_DISTANCE;
+                rotateCamera(currentXRotation, currentYRotation);
+            } else if (receivedXRotation < previousXRotation - MIN_X_DETECTED_ROTATION) {
+                currentXRotation = currentXRotation - X_ROTATION_DISTANCE; // rotate up
+                rotateCamera(currentXRotation, currentYRotation);
+            }
+
+            if (receivedYRotation >= previousYRotation + MIN_Y_DETECTED_ROTATION) // rotate right
             {
                 currentYRotation = currentYRotation + Y_ROTATION_DISTANCE;
-                rotateCamera(0, currentYRotation);
+                rotateCamera(previousXRotation, currentYRotation);
             } 
-            else if (receivedYRotation < previousYRotation - MIN_DETECTED_ROTATION) // rotate left
+            else if (receivedYRotation < previousYRotation - MIN_Y_DETECTED_ROTATION) // rotate left
             {
                 currentYRotation = currentYRotation - Y_ROTATION_DISTANCE;
-                rotateCamera(0, currentYRotation);
+                rotateCamera(previousXRotation, currentYRotation);
             }
         } 
         else { 
-            currentNullRotationCount++; 
-            if (currentNullRotationCount > 50) // if cannot detect face for 50 frames then recenter
+            noRotationReceivedCount++; 
+            if (noRotationReceivedCount > 50) // if cannot detect face for 50 frames then recenter
             {
                 if (currentYRotation != 0)
                 {
                     if (currentYRotation > 1) {
                         currentYRotation -= 1;
-                        currentXRotation -= 1;
-                    rotateCamera(currentXRotation, currentYRotation);
+                    rotateCamera(0, currentYRotation);
                     } 
                     else if (currentYRotation < -1)
                     {
                         currentYRotation +=1;
-                        currentXRotation += 1;
-                        rotateCamera(currentXRotation, currentYRotation);
+                        rotateCamera(0, currentYRotation);
                     }
                     else 
                     {
@@ -94,10 +92,8 @@ public class RotateCameraOnHeadMove : MonoBehaviour
         receivedXRotation = 0;
     }
 
-    private void receiveAndParseMessage()
+    private void parseMessage(string message)
     {
-        string message = _scriptConnector.ReceiveMessage();
-
         if (message != null)
         {
             try 
