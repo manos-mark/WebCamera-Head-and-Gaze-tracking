@@ -10,9 +10,9 @@ public class RotateCameraOnHeadMove : MonoBehaviour
     public int MIN_Y_DETECTED_ROTATION = 8;
     public int MIN_X_DETECTED_ROTATION = 4;
 
-    public float ROTATION_SPEED = 4f;
-    public float Y_ROTATION_DISTANCE = 1f;
-    public float X_ROTATION_DISTANCE = 0.2f;
+    public float ROTATION_SPEED = 8f;
+    public float Y_ROTATION_DISTANCE = 0.3f;
+    public float X_ROTATION_DISTANCE = 0.3f;
 
     private float previousXRotation = 0;
     private float previousYRotation = 0;
@@ -39,22 +39,50 @@ public class RotateCameraOnHeadMove : MonoBehaviour
             noRotationReceivedCount = 0;
             if (receivedXRotation >= previousXRotation + MIN_X_DETECTED_ROTATION) // rotate down
             {
+                if (receivedYRotation >= previousYRotation + MIN_Y_DETECTED_ROTATION) // rotate right
+                {
+                    currentYRotation = currentYRotation + Y_ROTATION_DISTANCE;
+                } 
+                else if (receivedYRotation < previousYRotation - MIN_Y_DETECTED_ROTATION) // rotate left
+                {
+                    currentYRotation = currentYRotation - Y_ROTATION_DISTANCE;
+                }
                 currentXRotation = currentXRotation + X_ROTATION_DISTANCE;
                 rotateCamera(currentXRotation, currentYRotation);
             } else if (receivedXRotation < previousXRotation - MIN_X_DETECTED_ROTATION) {
+                if (receivedYRotation >= previousYRotation + MIN_Y_DETECTED_ROTATION) // rotate right
+                {
+                    currentYRotation = currentYRotation + Y_ROTATION_DISTANCE;
+                } 
+                else if (receivedYRotation < previousYRotation - MIN_Y_DETECTED_ROTATION) // rotate left
+                {
+                    currentYRotation = currentYRotation - Y_ROTATION_DISTANCE;
+                }
                 currentXRotation = currentXRotation - X_ROTATION_DISTANCE; // rotate up
                 rotateCamera(currentXRotation, currentYRotation);
             }
 
             if (receivedYRotation >= previousYRotation + MIN_Y_DETECTED_ROTATION) // rotate right
             {
+                if (receivedXRotation >= previousXRotation + MIN_X_DETECTED_ROTATION) // rotate down
+                {
+                    currentXRotation = currentXRotation + X_ROTATION_DISTANCE;
+                } else if (receivedXRotation < previousXRotation - MIN_X_DETECTED_ROTATION) {
+                    currentXRotation = currentXRotation - X_ROTATION_DISTANCE; // rotate up
+                }
                 currentYRotation = currentYRotation + Y_ROTATION_DISTANCE;
-                rotateCamera(previousXRotation, currentYRotation);
+                rotateCamera(currentXRotation, currentYRotation);
             } 
             else if (receivedYRotation < previousYRotation - MIN_Y_DETECTED_ROTATION) // rotate left
             {
+                if (receivedXRotation >= previousXRotation + MIN_X_DETECTED_ROTATION) // rotate down
+                {
+                    currentXRotation = currentXRotation + X_ROTATION_DISTANCE;
+                } else if (receivedXRotation < previousXRotation - MIN_X_DETECTED_ROTATION) {
+                    currentXRotation = currentXRotation - X_ROTATION_DISTANCE; // rotate up
+                }
                 currentYRotation = currentYRotation - Y_ROTATION_DISTANCE;
-                rotateCamera(previousXRotation, currentYRotation);
+                rotateCamera(currentXRotation, currentYRotation);
             }
         } 
         else { 
